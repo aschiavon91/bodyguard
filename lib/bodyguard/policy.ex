@@ -37,7 +37,7 @@ defmodule Bodyguard.Policy do
 
   """
 
-  @type action :: atom | String.t()
+  @type action :: atom | String.t() | {module(), atom()}
   @type auth_result :: :ok | :error | {:error, reason :: any} | true | false
 
   @doc """
